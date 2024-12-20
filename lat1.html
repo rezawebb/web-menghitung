@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <h2>Hitung Indeks Prestasi</h2>
+      <form id="gradeForm">
+        <div class="input-group">
+          <label for="quiz">Quiz (10%):</label>
+          <input type="number" id="quiz" placeholder="Masukkan nilai" min="0" max="100" required>
+        </div>
+        <div class="input-group">
+          <label for="tugas">Tugas (20%):</label>
+          <input type="number" id="tugas" placeholder="Masukkan nilai" min="0" max="100" required>
+        </div>
+        <div class="input-group">
+          <label for="uts">UTS (30%):</label>
+          <input type="number" id="uts" placeholder="Masukkan nilai" min="0" max="100" required>
+        </div>
+        <div class="input-group">
+          <label for="uas">UAS (40%):</label>
+          <input type="number" id="uas" placeholder="Masukkan nilai" min="0" max="100" required>
+        </div>
+        <button type="button" id="calculate">Hitung</button>
+        <button type="reset" id="reset">Ulang</button>
+      </form>
+      <div class="result">
+        <h3>Hasil:</h3>
+        <p>Indeks Prestasi: <span id="indeks">-</span></p>
+        <p>Keterangan: <span id="keterangan">-</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
